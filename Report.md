@@ -36,6 +36,11 @@ The episode ends when the car reaches the flag (position > 0.5). The episode may
 ### DDQN
 
 ## The agent hyperparameters
+- Discount factor for target Q: GAMMA = 0.9   
+- Starting value of epsilon: INITIAL_EPSILON =  
+- Final value of epsilon: FINAL_EPSILON =  
+- Experience replay buffer size: REPLAY_SIZE =  
+- Size of minibatch: BATCH_SIZE =  
 
 ## The model architecture and hyperparameters
 
