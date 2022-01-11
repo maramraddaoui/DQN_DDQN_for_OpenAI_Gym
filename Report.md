@@ -1,6 +1,6 @@
 # MountainCar-v0 with DQN and DDQN
 ## The Mountain Car Environment
-![This is an image](https://gym.openai.com/videos/2019-10-21--mqt8Qj1mwo/MountainCar-v0/original.mp4)
+![This is an image](https://cdn-images-1.medium.com/max/800/1*nbCSvWmyS_BUDz_WAJyKUw.gif)
 
 
 The environment is two-dimensional and it consists of a car between two hills. 
