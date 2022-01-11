@@ -1,4 +1,5 @@
 # MountainCar-v0
+This project contains the code to train an agent to solve the OpenAI Gym Mountain Car environment with DQN and DDQN. Here are the installation steps needed to run this project.
 ## Required installation
 1. Install anaconda
 2. Python is a requirement (Python 3.3 or greater, or Python 2.7)
