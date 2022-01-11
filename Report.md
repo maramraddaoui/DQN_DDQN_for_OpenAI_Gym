@@ -28,3 +28,15 @@ The car starts between the two mountains, in a random position between -0.6 and 
 
 ### Episode Termination:
 The episode ends when the car reaches the flag (position > 0.5). The episode may also terminate when it reaches the maximum number of steps (The original value is 200. Here I used 1000 for training).
+
+## Implementation
+
+## The learning algorithms
+### DQN
+### DDQN
+
+## The agent hyperparameters
+
+## The model architecture and hyperparameters
+
+## The detailed results
