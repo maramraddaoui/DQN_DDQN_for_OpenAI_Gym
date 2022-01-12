@@ -34,7 +34,7 @@ The episode ends when the pole is more than 15 degrees from vertical, or the car
 - Step-6: Take the predicted return of current state and Y as the actual return. Calculate loss and perform an optimization step.
 - Step-7: Set state = next_state.
 - Step-8: Repeat Step-2 to Step-7 for n episodes.
-- 
+
 ## The learning algorithms
 ### DQN
 A DQN is a Q-value function approximator. At each time step, we pass the current environment observations as input. The output is the Q-value corresponding to each possible action.
