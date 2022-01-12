@@ -26,16 +26,6 @@ The pole starts upright with an initial angle between –0.05 and 0.05 radians.
 The episode ends when the pole is more than 15 degrees from vertical, or the cart moves more than 2.4 units from the center.
 ## Implementation
 
-## The learning algorithms
-### DQN
-A DQN is a Q-value function approximator. At each time step, we pass the current environment observations as input. The output is the Q-value corresponding to each possible action.
-
-The QNetwork class implementation consists of a simple neural network implemented in PyTorch that has two main methods — forward and select_action. The network takes the agent’s state as an input and returns the 𝑄 values for each of the actions. 
-
-We’ll be using experience replay memory for training our DQN. It stores the transitions that the agent observes, allowing us to reuse this data later. By sampling from it randomly, the transitions that build up a batch are decorrelated. It has been shown that this greatly stabilizes and improves the DQN training procedure.
-
-
-####Training Algorithm
 - Step-1: Initialize game state and get initial observations.
 - Step-2: Input the observation (obs) to Q-network and get Q-value corresponding to each action. Store the maximum of the q-value in action_index.
 - Step-3: With a probability, epsilon selects random action otherwise select action corresponding to max q-value. 
@@ -44,6 +34,15 @@ We’ll be using experience replay memory for training our DQN. It stores the tr
 - Step-6: Take the predicted return of current state and Y as the actual return. Calculate loss and perform an optimization step.
 - Step-7: Set state = next_state.
 - Step-8: Repeat Step-2 to Step-7 for n episodes.
+- 
+## The learning algorithms
+### DQN
+A DQN is a Q-value function approximator. At each time step, we pass the current environment observations as input. The output is the Q-value corresponding to each possible action.
+
+The QNetwork class implementation consists of a simple neural network implemented in PyTorch that has two main methods — forward and select_action. The network takes the agent’s state as an input and returns the 𝑄 values for each of the actions. 
+
+We’ll be using experience replay memory for training our DQN. It stores the transitions that the agent observes, allowing us to reuse this data later. By sampling from it randomly, the transitions that build up a batch are decorrelated. It has been shown that this greatly stabilizes and improves the DQN training procedure.
+
 
 ### Duel DQN
 The dueling architecture consists of two streams that represent the value and advantage functions while sharing a common convolutional feature learning module.
