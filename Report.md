@@ -1,4 +1,4 @@
-# CartPole-v0 with DQN and Duel DQN
+# CartPole-v1 with DQN and Duel DQN
 ## The CartPole Environment
 ![This is an image](https://cdn-images-1.medium.com/max/800/1*nbCSvWmyS_BUDz_WAJyKUw.gif)
 
