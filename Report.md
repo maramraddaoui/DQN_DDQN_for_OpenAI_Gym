@@ -53,7 +53,9 @@ The two streams are combined via an aggregating layer to produce an estimate of 
 ## The model architecture and hyperparameters
 ### DQN
 The model architecture is:
-
+- self.fc1 = nn.Linear(state_size, fc1_units)
+- self.fc2 = nn.Linear(fc1_units, fc2_units)
+- self.fc3 = nn.Linear(fc2_units, action_size)
 
 and the hyperparameters:
 - BUFFER_SIZE = int(1e5)  # replay buffer size
@@ -69,6 +71,7 @@ The two model architectures are:
 - self.relu = nn.ReLU()
 - self.fc_value = nn.Linear(64, 256)
 - self.fc_adv = nn.Linear(64, 256)
+
 and: 
 - self.value = nn.Linear(256, 1)
 - self.adv = nn.Linear(256, 2)
