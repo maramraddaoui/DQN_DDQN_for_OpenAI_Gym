@@ -1,4 +1,4 @@
-# CartPole-v0 with DQN and Duel DQN
+# CartPole-v1 with DQN and Duel DQN
 ## The CartPole Environment
 ![This is an image](https://thumbs.gfycat.com/WelllitLawfulCero-size_restricted.gif?fbclid=IwAR1XY0ZgmXoXMUHw2psYapNg4Hu274Hhs0B3X9lc8ONNmcgUn0aFOFSwCMY)
 
@@ -62,7 +62,7 @@ The two streams are combined via an aggregating layer to produce an estimate of 
 ### DQN
 Environment solved in 417 episodes with	Average Score: 197.91
 
-![This is an image]()
+![This is an image](https://github.com/maramraddaoui/DQN_DDQN_for_OpenAI_Gym/blob/main/Duel%20DQN/duel.PNG?raw=true)
 ### Duel DQN
 Environment solved in 193 episodes with	Average Score: 195.22
 
