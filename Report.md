@@ -42,5 +42,12 @@ The two streams are combined via an aggregating layer to produce an estimate of 
 - Size of minibatch: BATCH_SIZE =  
 
 ## The model architecture and hyperparameters
-
-## The detailed results
+### DQN
+### Duel DQN
+- GAMMA = 0.99
+- EXPLORE = 20000
+- INITIAL_EPSILON = 0.1
+- FINAL_EPSILON = 0.0001
+- REPLAY_MEMORY = 50000
+- BATCH = 16
+## Experiment results
