@@ -53,6 +53,8 @@ The two streams are combined via an aggregating layer to produce an estimate of 
 ## The model architecture and hyperparameters
 ### DQN
 The model architecture is:
+
+
 and the hyperparameters:
 - BUFFER_SIZE = int(1e5)  # replay buffer size
 - BATCH_SIZE = 256        # minibatch size
@@ -62,7 +64,15 @@ and the hyperparameters:
 - UPDATE_EVERY = 1        # how often to update the network
 
 ### Duel DQN
-The model architecture is:
+The two model architectures are:
+- self.fc1 = nn.Linear(4, 64)
+- self.relu = nn.ReLU()
+- self.fc_value = nn.Linear(64, 256)
+- self.fc_adv = nn.Linear(64, 256)
+and: 
+- self.value = nn.Linear(256, 1)
+- self.adv = nn.Linear(256, 2)
+
 and the hyperparameters:
 - BUFFER_SIZE = int(1e5)  # replay buffer size
 - BATCH_SIZE = 16         # minibatch size
