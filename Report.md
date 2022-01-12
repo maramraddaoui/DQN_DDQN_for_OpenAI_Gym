@@ -49,15 +49,25 @@ The dueling architecture consists of two streams that represent the value and ad
 The two streams are combined via an aggregating layer to produce an estimate of the state-action value function Q, as shown in the following diagram:
 
 ![This is an image](https://static.packt-cdn.com/products/9781788621755/graphics/995fbe60-e65c-4bd3-823a-54792a51fbe3.png)
-## The agent hyperparameters
-- Discount factor for target Q: GAMMA = 0.9   
-- Starting value of epsilon: INITIAL_EPSILON =  
-- Final value of epsilon: FINAL_EPSILON =  
-- Experience replay buffer size: REPLAY_SIZE =  
-- Size of minibatch: BATCH_SIZE =  
 
 ## The model architecture and hyperparameters
+### DQN
+The model architecture is:
+and the hyperparameters:
+- BUFFER_SIZE = int(1e5)  # replay buffer size
+- BATCH_SIZE = 256        # minibatch size
+- GAMMA = 0.99            # discount factor
+- TAU = 1e-3              # for soft update of target parameters
+- LR = 5e-4               # learning rate 
+- UPDATE_EVERY = 1        # how often to update the network
 
+### Duel DQN
+The model architecture is:
+and the hyperparameters:
+- BUFFER_SIZE = int(1e5)  # replay buffer size
+- BATCH_SIZE = 16         # minibatch size
+- GAMMA = 0.99            # discount factor
+- UPDATE_EVERY = 4        # how often to update the network
 ## Experiment results
 ### DQN
 Environment solved in 417 episodes with	Average Score: 197.91
@@ -66,4 +76,4 @@ Environment solved in 417 episodes with	Average Score: 197.91
 ### Duel DQN
 Environment solved in 193 episodes with	Average Score: 195.22
 
-![This is an image](https://static.packt-cdn.com/products/9781788621755/graphics/995fbe60-e65c-4bd3-823a-54792a51fbe3.png)
+![This is an image](https://github.com/maramraddaoui/DQN_DDQN_for_OpenAI_Gym/blob/main/Duel%20DQN/duel.PNG?raw=true)
