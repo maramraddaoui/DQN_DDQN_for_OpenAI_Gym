@@ -1,4 +1,4 @@
-# CartPole-v0
+# CartPole-v1
 This project contains the code to train an agent to solve the OpenAI Gym CartPole environment with DQN and Duel DQN. Here are the installation steps needed to run this project.
 ## Required installation
 1. Install anaconda
