@@ -59,4 +59,12 @@ The two streams are combined via an aggregating layer to produce an estimate of 
 
 ## The model architecture and hyperparameters
 
-## The detailed results
+## Experiment results
+### DQN
+Environment solved in 417 episodes with	Average Score: 197.91
+
+![This is an image](https://static.packt-cdn.com/products/9781788621755/graphics/995fbe60-e65c-4bd3-823a-54792a51fbe3.png)
+### Duel DQN
+Environment solved in 193 episodes with	Average Score: 195.22
+
+![This is an image](https://static.packt-cdn.com/products/9781788621755/graphics/995fbe60-e65c-4bd3-823a-54792a51fbe3.png)
