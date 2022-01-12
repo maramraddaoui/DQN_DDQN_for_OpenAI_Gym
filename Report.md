@@ -32,6 +32,7 @@ The QNetwork class implementation consists of a simple neural network implemente
 ### Duel DQN
 The dueling architecture consists of two streams that represent the value and advantage functions while sharing a common convolutional feature learning module.
 The two streams are combined via an aggregating layer to produce an estimate of the state-action value function Q, as shown in the following diagram:
+
 ![This is an image](https://static.packt-cdn.com/products/9781788621755/graphics/995fbe60-e65c-4bd3-823a-54792a51fbe3.png)
 ## The agent hyperparameters
 - Discount factor for target Q: GAMMA = 0.9   
