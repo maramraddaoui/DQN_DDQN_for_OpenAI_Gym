@@ -1,6 +1,7 @@
 # CartPole-v0 with DQN and Duel DQN
 ## The CartPole Environment
-![This is an image](https://thumbs.gfycat.com/SmartShortClownanemonefish-size_restricted.gif)
+![This is an image](https://cdn-images-1.medium.com/max/800/1*nbCSvWmyS_BUDz_WAJyKUw.gif)
+
 
 The environment is two-dimensional and it consists of a pole which moves along 
 a frictionless track. The system is controlled by applying a force of +1 or -1 
@@ -27,8 +28,11 @@ The episode ends when the pole is more than 15 degrees from vertical, or the car
 
 ## The learning algorithms
 ### DQN
-### DDQN
-
+The QNetwork class implementation consists of a simple neural network implemented in PyTorch that has two main methods — forward and select_action. The network takes the agent’s state as an input and returns the 𝑄 values for each of the actions. 
+### Duel DQN
+The dueling architecture consists of two streams that represent the value and advantage functions while sharing a common convolutional feature learning module.
+The two streams are combined via an aggregating layer to produce an estimate of the state-action value function Q, as shown in the following diagram:
+![This is an image](https://static.packt-cdn.com/products/9781788621755/graphics/995fbe60-e65c-4bd3-823a-54792a51fbe3.png)
 ## The agent hyperparameters
 - Discount factor for target Q: GAMMA = 0.9   
 - Starting value of epsilon: INITIAL_EPSILON =  
